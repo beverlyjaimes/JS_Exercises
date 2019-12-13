@@ -85,6 +85,14 @@ console.log(isTwo(2));
  * > calculateTip(0.15, 33.42) // returns 5.013
  */
 
+    const calculateTip = (bill, percentatge) => {
+    let tip = percentatge * bill;
+    return tip;
+};
+console.log(calculateTip(20, .15));
+console.log(calculateTip(100, .20));
+
+
 /**
  * TODO:
  * Use prompt and alert in combination with your calculateTip function to
