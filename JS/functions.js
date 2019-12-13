@@ -3,11 +3,19 @@
 /**
  * TODO:
  * Create a function called 'sayHello' that takes a parameter 'name'.
- * When called, the function should return a message that says hello to the passed in name.
+ * When called, the function should return a message that says hello to the passed in name.git
  *
  * Example
  * > sayHello("codeup") // returns "Hello, codeup!"
  */
+
+
+
+    const sayHello = function(name) {
+        return "Hello " + name;
+};
+
+console.log(sayHello("Marissa"));
 
 
 /**
