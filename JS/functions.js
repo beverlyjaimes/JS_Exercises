@@ -13,9 +13,9 @@
 
     const sayHello = function(name) {
         return "Hello " + name;
-};
+    };
 
-console.log(sayHello("Marissa"));
+    console.log(sayHello("Marissa"));
 
 
 /**
@@ -25,6 +25,9 @@ console.log(sayHello("Marissa"));
  *
  * console.log 'helloMessage' to check your work
  */
+
+    const helloMessage = sayHello("Beverly");
+    console.log(helloMessage);
 
 /**
  * TODO:
