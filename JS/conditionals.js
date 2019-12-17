@@ -18,54 +18,54 @@
 
 /* ########################################################################## */
 
-
-let willContinue = confirm("Will you enter a number?");
-
-if (willContinue === false){
-    alert("bye!")
-}
-if (willContinue) {
-
-    // prompt the user for a number
-    let userInput = prompt("What number would you like to enter");
-
-
-    let isNum = !isNaN(userInput);
-
-    if (isNum) {
-
-        let userNum = parseFloat(userInput);
-
-        // alert the following...
-
-        // whether the number is even or odd
-
-        let isEven = userInput % 2 === 0;
-        let isEvenMessage = (isEven) ? "Number is even" : "Number is odd";
-        alert(isEvenMessage);
-
-        // what the number plus 100 is
-
-        alert(userNum + 100);
-
-        // if the number is negative or positive
-
-        var isPos = Math.sign(userNum) === 1;
-        var isPosMessage = (isPos) ? "Number is positive" : "Number is negative";
-        alert(isPosMessage);
-
-
-    } else {
-
-    // otherwise
-        // if what the user enters is not a number, use an alert to tell them that, and
-        // * do *not* display any of the above information.
-        alert("That's not a number!");
-    }
-
-
-
-}
+//
+// let willContinue = confirm("Will you enter a number?");
+//
+// if (willContinue === false){
+//     alert("bye!")
+// }
+// if (willContinue) {
+//
+//     // prompt the user for a number
+//     let userInput = prompt("What number would you like to enter");
+//
+//
+//     let isNum = !isNaN(userInput);
+//
+//     if (isNum) {
+//
+//         let userNum = parseFloat(userInput);
+//
+//         // alert the following...
+//
+//         // whether the number is even or odd
+//
+//         let isEven = userInput % 2 === 0;
+//         let isEvenMessage = (isEven) ? "Number is even" : "Number is odd";
+//         alert(isEvenMessage);
+//
+//         // what the number plus 100 is
+//
+//         alert(userNum + 100);
+//
+//         // if the number is negative or positive
+//
+//         let isPos = Math.sign(userNum) === 1;
+//         let isPosMessage = (isPos) ? "Number is positive" : "Number is negative";
+//         alert(isPosMessage);
+//
+//
+//     } else {
+//
+//     // otherwise
+//         // if what the user enters is not a number, use an alert to tell them that, and
+//         // * do *not* display any of the above information.
+//         alert("That's not a number!");
+//     }
+//
+//
+//
+// }
 
 
 
@@ -93,8 +93,29 @@ if (willContinue) {
 // - `colors`: a list of the colors of the rainbow
 // - `randomColor`: contains a single random color value from the list (this
 //                  will contain a different color every time the page loads)
-var colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
+var colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo'];
 var randomColor = colors[Math.floor(Math.random() * colors.length)];
+
+switch (randomColor) {
+    case 'red':
+        alert(randomColor + 'Love');
+        break;
+    case 'orange':
+        alert(randomColor + 'Orange');
+        break;
+    case 'yellow':
+        alert(randomColor + 'Banana');
+        break;
+    case 'green':
+        alert(randomColor + 'Grass');
+        break;
+    case 'blue':
+        alert(randomColor + 'sad');
+         break;
+}
+
+
+
 /**
  * TODO:
  * Pass the `randomColor` variable to your function and console.log the results.
