@@ -156,6 +156,9 @@ switch (randomColor) {
  * return value.
  */
 
+//create a function with conditionals for 0-5
+
+
 /**
  * TODO:
  * Uncomment the line below to generate a random number between 0 and 6.
