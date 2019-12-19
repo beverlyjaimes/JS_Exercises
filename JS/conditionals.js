@@ -158,6 +158,30 @@ switch (randomColor) {
 
 //create a function with conditionals for 0-5
 
+ const calculatedTotal = (num, bill) => {
+     if(num === 0) {
+         return bill - 0;
+     } else if(num === 1) {
+         return bill * ((100-10)/100);
+     } else if(num === 2){
+         return bill * ((100-25)/100);
+     } else if(num === 3){
+         return bill * ((100-35)/100);
+     } else if(num === 4){
+         return bill * ((100-50)/100);
+     } else if(num === 5){
+         return bill;
+     }
+};
+
+console.log(calculatedTotal(1,100));
+console.log(calculatedTotal(2,100));
+console.log(calculatedTotal(3,100));
+console.log(calculatedTotal(4,100));
+console.log(calculatedTotal(5,100));
+
+
+
 
 /**
  * TODO:
