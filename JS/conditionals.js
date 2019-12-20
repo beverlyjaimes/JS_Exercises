@@ -160,25 +160,25 @@ switch (randomColor) {
 
  const calculatedTotal = (num, bill) => {
      if(num === 0) {
-         return bill - 0;
+         return alert (bill - 0);
      } else if(num === 1) {
-         return bill * ((100-10)/100);
+         return alert (bill * ((100-10)/100));
      } else if(num === 2){
-         return bill * ((100-25)/100);
+         return alert (bill * ((100-25)/100));
      } else if(num === 3){
-         return bill * ((100-35)/100);
+         return alert(bill * ((100-35)/100));
      } else if(num === 4){
-         return bill * ((100-50)/100);
+         return alert (bill * ((100-50)/100));
      } else if(num === 5){
-         return bill;
+         return alert(bill);
      }
 };
-
-console.log(calculatedTotal(1,100));
-console.log(calculatedTotal(2,100));
-console.log(calculatedTotal(3,100));
-console.log(calculatedTotal(4,100));
-console.log(calculatedTotal(5,100));
+//
+// console.log(calculatedTotal(1,100));
+// console.log(calculatedTotal(2,100));
+// console.log(calculatedTotal(3,100));
+// console.log(calculatedTotal(4,100));
+// console.log(calculatedTotal(5,100));
 
 
 
@@ -191,4 +191,8 @@ console.log(calculatedTotal(5,100));
  * price before the discount was, and what their price after the discount is.
  */
 // Generate a random number between 0 and 6
-// var luckyNumber = Math.floor(Math.random() * 6);
+var luckyNumber = Math.floor(Math.random() * 6);
+
+var userBill =  prompt('What is your total bill?');
+
+console.log(calculatedTotal(luckyNumber, userBill));
