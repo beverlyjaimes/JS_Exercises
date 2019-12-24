@@ -45,3 +45,4 @@ do {
 
 } while (allCones > 0);
 
+console.log('I sold all the cones!');
