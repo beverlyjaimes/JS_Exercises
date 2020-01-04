@@ -1,10 +1,17 @@
 // prompt the user for an odd number between 1 and 50
 // (use a loop if they to continue to ask for a number if until it is odd)
 
-let userNum = prompt("Enter an odd number: ");
+let userNum = prompt("Enter an odd number between 1 and 50: ");
 
-if(userNum  % 2 ){
-    alert("Thanks!")
-} else {
-    alert("That is not an odd number!")
+for (var i = 0; i <= 50 ; i++){
+    alert("your number is " + userNum);
+
+    if(i % 2 ){
+        alert("thanks");
+    break;
+
+    }  else if (userNum > 50) {
+        prompt("that number is greater than 50 or even")
+    }
+
 }
